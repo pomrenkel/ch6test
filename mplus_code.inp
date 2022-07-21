@@ -1,0 +1,11 @@
+Mplus Code for Simulation Example
+
+title: CFA, p/f = 6, three-factor misfitting model (1/3)
+data: FILE IS C:\research\chapter\runthis.dat;
+variable: names are v1-v18;
+model:
+  f1 by v1-v2* v5-v6;
+  f2 by v3-v4* v7-v12;
+  f3 by v13-v18*;
+  f1-f3@1;
+output: stand;
